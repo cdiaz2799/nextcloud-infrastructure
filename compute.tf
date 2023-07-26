@@ -33,7 +33,6 @@ resource "google_compute_instance" "nextcloud-web" {
 
   scheduling {
     on_host_maintenance = "MIGRATE"
-    preemptible         = true
     provisioning_model  = "STANDARD"
   }
 
