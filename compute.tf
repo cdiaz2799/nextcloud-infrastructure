@@ -1,6 +1,6 @@
 ## Static IP
 resource "google_compute_address" "nextcloud-ip" {
-  name = "nextcloud-ip"
+  name         = "nextcloud-ip"
   network_tier = "STANDARD"
 }
 
