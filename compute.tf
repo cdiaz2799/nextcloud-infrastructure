@@ -10,7 +10,7 @@ resource "google_compute_instance" "nextcloud-web" {
   name         = "nextcloud-web"
   machine_type = "e2-micro"
   zone         = "us-west1-b"
-  tags         = ["nextcloud-web"]
+  tags         = ["nextcloud-web", "health-check", "ssh"]
 
   boot_disk {
     device_name = "nextcloud-os"
