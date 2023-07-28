@@ -15,5 +15,3 @@ variable "zone" {
   default     = "us-west1-b"
   type        = string
 }
-
-
