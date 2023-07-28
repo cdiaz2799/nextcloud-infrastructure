@@ -4,6 +4,11 @@ resource "google_compute_address" "nextcloud-ip" {
   network_tier = "STANDARD"
 }
 
+## SSH Key
+resource "google_compute_project_metadata_item" "ansible_ssh_key" {
+  key   = "ssh-keys"
+  value = var.ansiblekey
+}
 
 ## Compute Engine Instance
 resource "google_compute_instance" "nextcloud-web" {

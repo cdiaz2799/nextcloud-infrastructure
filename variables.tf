@@ -15,3 +15,7 @@ variable "zone" {
   default     = "us-west1-b"
   type        = string
 }
+
+variable "ansiblekey" {
+  description = "SSH Keys for Ansible"
+}
