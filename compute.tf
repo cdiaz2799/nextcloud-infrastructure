@@ -7,7 +7,7 @@ resource "google_compute_address" "nextcloud-ip" {
 ## SSH Key
 resource "google_compute_project_metadata_item" "ansible_ssh_key" {
   key   = "ssh-keys"
-  value = var.ansiblekey
+  value = file(var.ansiblekey)
 }
 
 ## Compute Engine Instance
