@@ -39,7 +39,6 @@ module "sql-db" {
   additional_users = [
     {
       name            = "nextcloud"
-      host            = "localhost"
       password        = ""
       type            = "BUILT_IN"
       random_password = true
