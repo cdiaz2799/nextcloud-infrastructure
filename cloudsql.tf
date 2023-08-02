@@ -40,6 +40,7 @@ module "sql-db" {
     {
       name            = "nextcloud"
       password        = ""
+      host            = "%"
       type            = "BUILT_IN"
       random_password = true
     }
