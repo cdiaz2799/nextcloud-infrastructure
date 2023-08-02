@@ -19,6 +19,21 @@ module "sql-db" {
 
   // Network Configuration
   ip_configuration = {
+    allocated_ip_range : "",
+    authorized_networks : [
+      {
+        name  = google_compute_address.nextcloud-ip.name
+        value = google_compute_address.nextcloud-ip.address
+      }
+    ],
+    enable_private_path_for_google_cloud_services : true,
+    ipv4_enabled : false,
+    private_network : google_compute_network.nextcloud-network.self_link,
+    require_ssl : false
+  }
+
+  // Network Configuration
+  ip_configuration = {
     ipv4_enabled       = true
     allocated_ip_range = google_compute_subnetwork.nextcloud-subnet.ip_cidr_range
     require_ssl        = false
