@@ -17,6 +17,20 @@ module "sql-db" {
   disk_type                       = "PD_HDD"
   disk_size                       = 10
 
+  // Network Configuration
+  ip_configuration = {
+    ipv4_enabled       = true
+    allocated_ip_range = google_compute_subnetwork.nextcloud-subnet.ip_cidr_range
+    require_ssl        = false
+    private_network    = google_compute_network.nextcloud-network.self_link
+    authorized_networks = [
+      {
+        name  = google_compute_subnetwork.nextcloud-subnet.name,
+        value = google_compute_subnetwork.nextcloud-subnet.ip_cidr_range
+      }
+    ]
+  }
+
   // Nextcloud Database
   db_name      = "nextcloud-db"
   db_charset   = "utf8mb4"
