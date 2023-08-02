@@ -25,8 +25,8 @@ module "sql-db" {
     private_network    = google_compute_network.nextcloud-network.self_link
     authorized_networks = [
       {
-        name  = google_compute_subnetwork.nextcloud-subnet.name,
-        value = google_compute_subnetwork.nextcloud-subnet.ip_cidr_range
+        name  = google_compute_address.nextcloud-ip.name,
+        value = google_compute_address.nextcloud-ip.address
       }
     ]
   }
