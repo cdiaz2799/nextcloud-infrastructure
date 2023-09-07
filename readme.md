@@ -3,11 +3,12 @@
 <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" />
 <br>nextcloud-infrastructure
 </h1>
-<h3>◦ Powering your cloud, flawlessly.</h3>
-<h3>◦ Developed with the software and tools listed below.</h3>
+<h3>Nextcloud in GCP</h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Terraform-7B42BC.svg?style&logo=Terraform&logoColor=white" alt="Terraform" />
+<img src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style&logo=google-cloud&logoColor=white" alt="Google Cloud Platform">
+<img src="https://img.shields.io/badge/gitlab%20ci-%23181717.svg?style&logo=gitlab&logoColor=white" alt="Gitlab CI">
 </p>
 <img src="https://img.shields.io/github/languages/top/cdiaz2799/nextcloud-infrastructure?style&color=5D6D7E" alt="GitHub top language" />
 <img src="https://img.shields.io/github/languages/code-size/cdiaz2799/nextcloud-infrastructure?style&color=5D6D7E" alt="GitHub code size in bytes" />
@@ -23,9 +24,6 @@
 - [📂 Project Structure](#project-structure)
 - [🧩 Modules](#modules)
 - [🚀 Getting Started](#-getting-started)
-- [🗺 Roadmap](#-roadmap)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
 - [👏 Acknowledgments](#-acknowledgments)
 
 ---
